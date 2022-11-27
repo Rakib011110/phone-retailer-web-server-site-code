@@ -1,0 +1,152 @@
+[
+  {
+    "category_id": "637fb8c9345d495b77124a89",
+    "rating": { "number": 4.5 },
+    "title": "Apple iPhone 14",
+
+    "brands": {
+      "name": "Apple iPhone 14",
+      "published_date": "September 14, 2021 (Official)",
+      "img": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.large.jpg",
+      "ram": "4 GB ",
+      "price": "1,09,900"
+    },
+    "thumbnail_url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.large.jpg",
+    "image_url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.large.jpg",
+    "details": "Apple recently launched its iPhone 14 series in different storage variants that come with impressive features and specifications. The series include iPhone 14, iPhone 14 Plus, iPhone 14 Pro, and iPhone Pro Max. The handsets in the newly launched series support the 5G network."
+  },
+
+  {
+    "category_id": "637fb8c9345d495b77124a89",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "",
+
+    "brands": {
+      "name": "Apple iPhone 13",
+      "published_date": "September 14, 2021 (Official)",
+      "img": "https://i0.wp.com/bdnewsnet.com.bd/tech/wp-content/uploads/sites/9/2021/09/iPhone-13-Price-and-Specifications.jpg",
+      "ram": "4 GB ",
+      "price": "1,0,500"
+    },
+    "thumbnail_url": "https://i0.wp.com/bdnewsnet.com.bd/tech/wp-content/uploads/sites/9/2021/09/iPhone-13-Price-and-Specifications.jpg",
+    "image_url": "https://i0.wp.com/bdnewsnet.com.bd/tech/wp-content/uploads/sites/9/2021/09/iPhone-13-Price-and-Specifications.jpg",
+    "details": "iPhone 13 is one of the most popular models of the iPhone 13 series that also comprise the iPhone 13 mini, iPhone 13 Pro, and iPhone 13 Pro Max. The iPhone 13 specifications and features are highly impressive thus making it highly demanded among customers. Available in different storage options and colors, iPhone 13 can be bought at the best prices in India. Moreover, all the models of the iPhone 13 series support the 5G network that would offer faster speed and better connectivity to the users."
+  },
+  {
+    "category_id": "637fb8c9345d495b77124a89",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "",
+
+    "brands": {
+      "name": "Apple iPhone 11 Pro",
+      "published_date": "2022-08-24 17:27:34",
+      "img": "https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png",
+      "ram": "4 GB ",
+      "price": "1,00,900"
+    },
+    "thumbnail_url": "https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png",
+    "image_url": "https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png",
+    "details": "Apple iPhone 11 Pro Max 256GB is the new mobile from Apple that was launched in India on September 20, 2019 (Official). This mobile is available at a starting price of Rs 123,900 in different color options. The mobile from Apple comes with a 6.5 inches (16.51 cm) display that has a resolution of 1242 x 2688 pixels."
+  },
+
+  {
+    "category_id": "637fb8c9345d495b77124a8a",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "",
+
+    "brands": {
+      "name": "OnePlus 10 PRO ",
+      "published_date": "March 31, 2022 (Official)",
+      "img": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/oneplus_10_pro_renders_ol.jpeg",
+      "ram": "4 GB ",
+      "price": "1,00,900"
+    },
+    "thumbnail_url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/oneplus_10_pro_renders_ol.jpeg",
+    "image_url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/oneplus_10_pro_renders_ol.jpeg",
+    "details": "OnePlus 10 Pro is one of the most popular smartphones that support the 5G network. This smartphone from OnePlus comes with a different design in comparison to other OnePlus devices. In addition to this, the phone’s dimensions measure 163mm x 73.9 mm x 8.6 mm (height x width x thickness) and it weighs approximately 200.5 grams."
+  },
+
+  {
+    "category_id": "637fb8c9345d495b77124a8a",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "",
+
+    "brands": {
+      "name": "OnePlus RT",
+      "published_date": "March 31, 2022 (Official)",
+      "img": "https://www.91-cdn.com/hub/wp-content/uploads/2021/08/oneplus-9r-image-feat.jpg",
+      "ram": "12 GB ",
+      "price": "50900"
+    },
+    "thumbnail_url": "https://www.91-cdn.com/hub/wp-content/uploads/2021/08/oneplus-9r-image-feat.jpg",
+    "image_url": "https://www.91-cdn.com/hub/wp-content/uploads/2021/08/oneplus-9r-image-feat.jpg",
+    "details": " Equipped with impressive features and decent specifications, the OnePlus RT is a perfect choice that is available at a starting price of Rs 38,450. The phone offers a slip-free grip as it is light in weight and is easy to carry.  his stylish handset from OnePlus comes with a 6.62 inches (16.81 cm) display that has a resolution of 1080 x 2400 Pixels offering immersive and comfortable viewing "
+  },
+
+  {
+    "category_id": "637fb8c9345d495b77124a8a",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "OnePlus 11",
+
+    "brands": {
+      "name": "OnePlus 11",
+      "published_date": "2022-08-24 17:27:34",
+      "img": "https://www.mobiledokan.co/wp-content/uploads/2020/10/OnePlus-10-Pro-Black.jpg",
+      "ram": "12 GB ",
+      "price": "50900"
+    },
+    "thumbnail_url": "https://www.mobiledokan.co/wp-content/uploads/2020/10/OnePlus-10-Pro-Black.jpg",
+    "image_url": "https://www.mobiledokan.co/wp-content/uploads/2020/10/OnePlus-10-Pro-Black.jpg",
+    "details": "The company has confirmed that the latest mobile platform will be adopted by global OEMs and brands including Asus Republic of Gamers, Honor, iQoo, Motorola, Nubia, OnePlus, Oppo, Redmagic, Redmi, Sharp, Sony, Vivo, Xiaomi, XINGJI/MEIZU and ZTE. The company has also confirmed that the first device powered by Snapdragon 8 Gen 2 will arrive by the end of the year."
+  },
+
+  {
+    "category_id": "637fb8c9345d495b77124a8b",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "Samsung Galaxy A52",
+
+    "brands": {
+      "name": "Samsung Galaxy A52",
+      "published_date": "2022-08-24 17:27:34",
+      "img": "https://sourceofproduct.com/wp-content/uploads/2021/04/samsung-galaxy-a52-blue-1.jpg",
+      "ram": "4 GB ",
+      "price": "1,00,900"
+    },
+    "thumbnail_url": "https://sourceofproduct.com/wp-content/uploads/2021/04/samsung-galaxy-a52-blue-1.jpg",
+    "image_url": "https://sourceofproduct.com/wp-content/uploads/2021/04/samsung-galaxy-a52-blue-1.jpg",
+    "details": "Samsung released the first One UI 5.0 beta update to the Galaxy A52 smartphone in India two months back, and now it has released the stable Android 13 OneUI 5.0 update  The new software also brings the November 2022 security patch that fixes close to four dozen security vulnerabilities, reports SamMobile. Since it's a 1911.37MB update, it is suggested to download using a Wi-Fi network"
+  },
+
+  {
+    "category_id": "637fb8c9345d495b77124a8b",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "Galaxy Z Flip4",
+
+    "brands": {
+      "name": "Galaxy Z Flip4",
+      "published_date": "2022-08-24 17:27:34",
+      "img": "https://i.blogs.es/873a21/samsungflip4-ap/1366_2000.jpeg",
+      "ram": "4 GB ",
+      "price": "1,00,900"
+    },
+    "thumbnail_url": "https://www.mobiledokan.co/wp-content/uploads/2021/11/Samsung-Galaxy-Z-Flip4-Pink.jpg",
+    "image_url": "https://www.mobiledokan.co/wp-content/uploads/2021/11/Samsung-Galaxy-Z-Flip4-Pink.jpg",
+    "details": "Galaxy Z Flip4 Bespoke edition needs special production. Please allow approximately three to four weeks for delivery"
+  },
+  {
+    "category_id": "637fb8c9345d495b77124a8b",
+    "rating": { "number": 4.5, "badge": "Excellent" },
+    "title": "Samsung Galaxy A21s",
+
+    "brands": {
+      "name": "Samsung Galaxy A21s",
+      "published_date": "2022-08-24 17:27:34",
+      "img": "https://i0.wp.com/www.dignited.com/wp-content/uploads/2020/11/SamsungGalaxyA31__1_.jpg",
+      "ram": "4 GB ",
+      "price": "1,00,900"
+    },
+    "thumbnail_url": "https://i0.wp.com/www.dignited.com/wp-content/uploads/2020/11/SamsungGalaxyA31__1_.jpg",
+    "image_url": "https://i0.wp.com/www.dignited.com/wp-content/uploads/2020/11/SamsungGalaxyA31__1_.jpg",
+    "details": "Samsung Galaxy A21s comes with 6.5 inches HD+ PLS TFT screen. It has a left punch-hole front camera design. The back camera is of quad 48+8+2+2 MP with PDAF, LED flash, ultrawide lens, depth sensor, dedicated macro camera etc. and Full HD video recording. The front camera is of 13 MP. Samsung Galaxy A21s comes with 5000 mAh battery and 15W fast charging. It has 3, 4 or 6 GB RAM, up to 2.2 GHz octa-core CPU and Mali G52 GPU. It is powered by a Exynos 850 (8 nm) chipset. The device comes with 32 or 64 GB internal storage and dedicated MicroSD slot. There is a back-mounted fingerprint sensor in this phone."
+  }
+]
