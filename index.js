@@ -61,6 +61,12 @@ async function run() {
         const bookingCollection = client.db('creativeProducts').collection('booking')
         const usersCollection = client.db('creativeProducts').collection('users')
 
+        // -----------------------------------------------------
+        // const addProductCollection = client.db('creativeProducts').collection('addProduct');
+        const paymentCollection = client.db('creativeProducts').collection('payments');
+        const ourCollection = client.db('creativeProducts').collection('collections');
+        //-------------------------------------------------------------
+
 
 
         app.get("/phone", async (req, res) => {
@@ -85,12 +91,91 @@ async function run() {
 
         }),
 
-            app.get('/phone-category/:id', async (req, res) => {
-                const id = req.params.id;
-                const query = { _id: ObjectId(id) };
-                const select = await phoneOptionCollectionCategory.findOne(query);
-                res.send(select);
+            // ----------------------------------//
+
+            app.post('/phone', async (req, res) => {
+                const product = req.body
+                console.log(product)
+                const query = {
+                    productsName: product.name,
+                    price: product.price,
+                    condition: product.condition,
+                    phone: product.phone,
+                    location: product.location,
+                    image_url: product.image,
+                    email: product.email,
+                    category_id: product.category_id,
+                    role: product.role,
+                    use: product.use,
+                    details: product.details,
+                }
+                const result = await phoneOptionCollection.insertOne(query)
+                res.send(result)
+
+
             })
+
+        app.get('/add-products/:email', async (req, res) => {
+            const email = req.params.email
+            const query = { email: email }
+            console.log(query);
+            const result = await phoneOptionCollection.findOne(query)
+            res.send(result)
+        })
+
+
+        //--------------------------------------------
+        // app.get('/addproduct', async (req, res) => {
+        //     const query = {}
+        //     const products = await addProductCollection.find(query).toArray();
+        //     res.send(products);
+        // })
+
+        // app.post('/addproduct', verifyJWT, async (req, res) => {
+        //     const product = req.body;
+        //     const result = await addProductCollection.insertOne(product);
+        //     res.send(result);
+        // });
+        // app.delete('/addproduct/:id', verifyJWT, async (req, res) => {
+        //     const id = req.params.id;
+        //     const filter = { _id: ObjectId(id) };
+        //     const result = await addProductCollection.deleteOne(filter);
+        //     res.send(result);
+        // });
+
+        //-----------------------------------------------------
+
+
+
+        app.get('/bookings/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) }
+            const booking = await bookingsCollection.findOne(query);
+            res.send(booking);
+        });
+
+        app.get('/ourcollections', async (req, res) => {
+            const query = {}
+            const ourCollectionss = await ourCollection.find(query).toArray()
+            res.send(ourCollectionss)
+        });
+
+
+        //-------------------------------------------------------------
+
+
+
+
+
+
+
+
+        app.get('/phone-category/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const select = await phoneOptionCollectionCategory.findOne(query);
+            res.send(select);
+        })
 
 
         // * -------------BookingCollection-------------
@@ -137,6 +222,15 @@ async function run() {
 
 
 
+
+        //  * ----------addProducts-------------- 
+        app.get('/AddProducts', async (req, res) => {
+            const query = {}
+            const result = await appointmentOptionCollection.find(query).project({ name: 1 }).toArray();
+            res.send(result);
+        })
+
+
         //*---------------usersCollection----------------------------
 
         app.get("/users", async (req, res) => {
@@ -169,6 +263,25 @@ async function run() {
             res.send({ isAdmin: user?.role === 'admin' });
         })
 
+
+        app.get('/users/buyer/:email', async (req, res) => {
+            const email = req.params.email;
+            const query = { email };
+            const user = await usersCollection.findOne(query);
+            res.send({ isBuyer: user?.role === 'Buyer' });
+        });
+        app.get('/users/seller/:email', async (req, res) => {
+            const email = req.params.email;
+            const query = { email };
+            const user = await usersCollection.findOne(query);
+            res.send({ isSeller: user?.role === 'Seller' });
+        });
+
+
+
+
+
+
         //*   ---PUT Admin ---
 
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
@@ -196,6 +309,45 @@ async function run() {
 
         // *-------------------------------------
 
+
+
+
+
+
+        //--------------------------------
+
+
+        app.post('/create-payment-intent', async (req, res) => {
+            const booking = req.body;
+            const price = booking.price;
+            const amount = price;
+
+            const paymentIntent = await stripe.paymentIntents.create({
+                currency: 'usd',
+                amount: amount,
+                "payment_method_types": ["card"]
+
+            });
+            res.send({
+                clientSecret: paymentIntent.client_secret,
+            });
+        });
+
+        app.post('/payments', async (req, res) => {
+            const payment = req.body;
+            const result = await paymentCollection.insertOne(payment);
+            const id = payment.bookingId;
+            const filter = { _id: ObjectId(id) };
+            const updatedDoc = {
+                $set: {
+                    paid: true,
+                    transactionId: payment.transactionId
+                }
+            }
+            const updatedResult = await bookingsCollection.updateOne(filter, updatedDoc)
+            res.send(result);
+        })
+        //-----------------------------------------------
 
     }
 
